@@ -1,0 +1,157 @@
+# Event Recommendation Initial Prompt
+
+The user's post is as follows:  
+*** Example of User Post ***  
+"I enjoy reading ancient manuscripts."  
+"Does anyone want to go to karaoke now?"
+
+First, infer the user’s personality traits. 
+The inference should be conducted based on the Big Five personality traits, which include the following criteria:
+- Agreeableness
+- Extraversion
+- Neuroticism
+- Conscientiousness
+- Openness
+
+Assign a score to each item. The scoring is performed on a 5-point scale:
+• 1 = Strongly Disagree
+• 2 = Disagree
+• 3 = Neutral
+• 4 = Agree
+• 5 = Strongly Agree
+
+For reverse scoring items (S1, S3, S6, S8), their scores should be reversed before calculating the final score. 
+The following are the items for agreeableness:
+• S1: The author occasionally notices others’ faults.
+• S2: The author helps others and is not selfish.
+• S3: The author sometimes argues with others.
+• S4: The author easily forgives others.
+• S5: The author easily trusts others.
+• S6: The author sometimes acts coldly towards others.
+• S7: The author is kind to everyone.
+• S8: The author occasionally behaves rudely.
+• S9: The author likes to cooperate with others.
+For each of the above items (S1–S9), output the assigned score and the reasoning behind it, citing the specific user post reference. 
+If no relevant information is found, assign a neutral score (3).
+
+Based on the above scores, calculate the user’s agreeableness score. 
+The calculation must be performed based on the following Python program, and the equation along with the computed result should be displayed.
+
+********** Python Program **********
+# Scores for each item
+agr = [, , ...]
+
+# Indexes of reverse scoring items
+agr_rev = [0, 2, 5, 7]
+
+# Function to apply reverse scoring
+def reverse_score(scores, reverse_indices):
+    return [
+        6 - scores[i] if i in reverse_indices 
+        else scores[i] 
+        for i in range(len(scores))
+    ]
+
+# Calculate agreeableness score
+agr_score = sum(
+    reverse_score(agr, agr_rev)
+) / len(agr)
+
+# Output the score
+printf("Agreeableness: {agr_score}")
+********** End of Python Program **********
+
+Similarly, perform the same evaluation for Extraversion, Neuroticism, Conscientiousness, and Openness using their respective reverse scoring criteria and personality trait descriptions.
+
+[Extraversion]
+Reverse scoring items: 2, 5, 7
+1. The author is talkative.  
+2. The author is reserved.  
+3. The author is energetic.  
+4. The author generates a lot of enthusiasm.  
+5. The author is usually quiet.  
+6. The author is assertive.  
+7. The author is sometimes shy and withdrawn.  
+8. The author is sociable and outgoing.
+
+[Neuroticism]
+Reverse scoring items: 2, 5, 7
+1. The author feels down or depressed.  
+2. The author is relaxed and handles stress well.  
+3. The author is easily tense.  
+4. The author often worries.  
+5. The author is calm and not easily upset.  
+6. The author's mood changes easily.  
+7. The author remains calm even in difficult situations.  
+8. The author becomes nervous easily.
+
+[Conscientiousness]
+Reverse scoring items: 2, 4, 5
+1. The author performs tasks carefully and thoroughly.  
+2. The author is sometimes careless.  
+3. The author is a hard worker.  
+4. The author is not good at organizing things.  
+5. The author tends to be lazy.  
+6. The author keeps working until tasks are completed.  
+7. The author acts quickly and carefully.  
+8. The author makes plans and follows them.
+
+[Openness]
+Reverse scoring items: 7, 9
+1. The author is creative and comes up with new ideas.  
+2. The author is curious about many things.  
+3. The author is original and deep-thinking.  
+4. The author has a strong imagination.  
+5. The author is innovative.  
+6. The author values art.  
+7. The author prefers routine work.  
+8. The author reflects on themselves often.  
+9. The author has average interest in the arts.  
+10. The author is skilled in art, music, or literature.
+
+Next, based on the given text, infer appropriate preferences of the user.
+
+Then, analyze the emotions expressed in the user ’s post using the following steps:
+1) Identify the emotions expressed by the user.
+2) Determine the possible causes and thoughts behind those emotions.
+3) Show empathy and deep understanding of the user ’s feelings.
+4) Provide specific advice or solutions addressing the user’s concerns.
+Output the inferred emotions along with a reasoning process.
+
+Based on the inferred personality traits, preferences, and emotions, narrow down potential events for the user. 
+The filtering is conducted as follows:
+• Agreeableness:
+– High: Since individuals with high agreeableness tend to conform to social norms and the people around them, they are recommended popular, well-known events or activities that involve cooperation or group participation.
+– Low: The above types of events and activities should be avoided.
+
+• Extraversion:
+– High: Individuals with high extraversion are recommended activity-oriented events that involve physical or social engagement.
+– Low: For those with low extraversion, events should be further filtered based on individual preferences and personal interests.
+
+• Neuroticism:
+– High: Individuals with high neuroticism tend to be emotionally unstable, so events that offer emotional variety and engagement are recommended.
+
+• Conscientiousness:
+– High: Individuals with high conscientiousness are likely to enjoy events that provide a sense of achievement or refreshment, and filtering should be guided by emotional factors.
+– Low: For individuals with low conscientiousness, recommend events that have clear appeal and impact. Since they tend to be more impulsive and easily bored, events from a wide range of genres should be suggested.
+
+• Openness:
+– High: Individuals with high openness tend to enjoy activities that stimulate curiosity and involve new or unexpected experiences. Therefore, event recommendations should be based on hobbies that are slightly different from but still related to the user's main interests.
+– Low: Those with low openness have a preference for stability and a more conservative mindset. As a result, popular and well-known events are recommended, while new and unfamiliar experiences are avoided.
+
+Finally, recommend three appropriate events for the user from the event list below. Provide explanations for why each event was recommended based on personality traits, preferences and emotions.
+
+*** Example of Event List ***  
+Lectures:
+Public Lecture: “COVID-19 and Psychology”
+Shibuya Environmental Symposium
+
+Exhibitions:
+Hideaki Anno Exhibition
+The Mysteries of the North: Paintings from Norway, Sweden, and Finland
+National Calligraphy Exhibition
+
+Outdoor Events:
+Arashiyama Hot Springs Autumn Light-Up at Hogon-in Temple
+Clam Digging at Kasai Seaside Park
+Flower Festival
