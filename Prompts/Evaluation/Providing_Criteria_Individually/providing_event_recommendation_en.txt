@@ -1,0 +1,20 @@
+# Evaluation Prompt : Providing Criteria Individually(Event Recommendation Relevance)
+
+Please evaluate the following output based on the criteria for Event Recommendation Relevance:
+- Accuracy of Classification Based on Personality Traits
+Is the classification of events according to personality traits (Openness, Agreeableness, Extraversion, Neuroticism, and Conscientiousness) accurate?
+Are the recommended event types aligned with the inferred personality traits?
+
+- Consideration of Preferences and Emotions
+Are the user's preferences and emotional states reflected in the event selection?  
+Are there clear and specific reasons provided based on the user's preferences and emotions?
+
+- Appropriateness of the Recommended Events  
+Are the recommended events appropriate and likely to be of interest to the user?  
+Are personality traits, preferences, and emotions all considered in a balanced manner?
+
+- Persuasiveness of Recommendation Reasoning  
+Are the reasons for recommending each event concrete and persuasive?  
+Is it clearly explained why each event was selected?
+
+*** Output Result ***

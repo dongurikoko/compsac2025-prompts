@@ -1,0 +1,8 @@
+# Evaluation Prompt : Providing Criteria Individually(Preferences Inference)
+
+Please evaluate the following output based on the criteria for Preferences Inference:
+- Accuracy of Preference Inference
+Have the preferences of the user been inferred appropriately based on their posts?
+Is the inferred preference consistent with the user’s post content?
+
+*** Output Result ***

@@ -1,0 +1,15 @@
+# Evaluation Prompt : Providing Criteria Individually(Emotion Inference)
+
+Please evaluate the following output based on the criteria for Emotion Inference:
+- Accuracy of Emotion Detection
+Is the identified emotion (e.g., joy, sadness, anxiety, anger) appropriate?
+Is the inferred emotion logically supported by the specific content and context of the user’s posts?
+
+- Empathy and Understanding
+Does the output demonstrate empathy toward the identified emotion?
+Does it reflect a deep understanding of the user's emotional state?
+
+- Effectiveness of Advice
+Are the suggestions and solutions provided based on the inferred emotions specific and actionable?
+
+*** Output Result ***
