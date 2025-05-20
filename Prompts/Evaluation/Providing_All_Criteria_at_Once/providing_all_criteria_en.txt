@@ -1,0 +1,53 @@
+# Evaluation Prompt : Providing All Criteria at Once
+
+*** Evaluation Criteria ***
+• Personality Trait Inference
+- Scoring Accuracy
+Are the scores for each item (e.g., S1–S9) appropriate?
+Are the calculated results for each personality trait (Agreeableness, Extraversion, Neuroticism, Conscientiousness, and Openness) valid?
+Is the reasoning behind the assigned scores clear and reasonable based on the user’s post content?
+Has reverse scoring been correctly applied?
+
+- Accuracy of Score Calculation
+Is the personality trait inference process accurate and compliant with the specified calculation formula?
+Is the score calculation process explicitly documented, including mathematical expressions and explanations of intermediate steps?
+
+• Preferences Inference
+- Accuracy of Preference Inference
+Have the preferences of the user been inferred appropriately based on their posts?
+Is the inferred preference consistent with the user’s post content?
+
+• Emotion Inference
+- Accuracy of Emotion Detection
+Is the identified emotion (e.g., joy, sadness, anxiety, anger) appropriate?
+Is the inferred emotion logically supported by the specific content and context of the user’s posts?
+
+- Empathy and Understanding
+Does the output demonstrate empathy toward the identified emotion?
+Does it reflect a deep understanding of the user's emotional state?
+
+- Effectiveness of Advice
+Are the suggestions and solutions provided based on the inferred emotions specific and actionable?
+
+• Event Recommendation Relevance
+- Accuracy of Classification Based on Personality Traits
+Is the classification of events according to personality traits (Openness, Agreeableness, Extraversion, Neuroticism, and Conscientiousness) accurate?
+Are the recommended event types aligned with the inferred personality traits?
+
+- Consideration of Preferences and Emotions
+Are the user's preferences and emotional states reflected in the event selection?  
+Are there clear and specific reasons provided based on the user's preferences and emotions?
+
+- Appropriateness of the Recommended Events  
+Are the recommended events appropriate and likely to be of interest to the user?  
+Are personality traits, preferences, and emotions all considered in a balanced manner?
+
+- Persuasiveness of Recommendation Reasoning  
+Are the reasons for recommending each event concrete and persuasive?  
+Is it clearly explained why each event was selected?
+
+
+
+Please evaluate the following output based on the given evaluation criteria.
+
+*** Output Result ***
