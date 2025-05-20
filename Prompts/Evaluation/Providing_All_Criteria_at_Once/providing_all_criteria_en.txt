@@ -49,5 +49,6 @@ Is it clearly explained why each event was selected?
 
 
 Please evaluate the following output based on the given evaluation criteria.
+Additionally, ensure that all calculations are re-performed using Python program, and compare the recalculated scores with the provided output to verify if they match.
 
 *** Output Result ***
