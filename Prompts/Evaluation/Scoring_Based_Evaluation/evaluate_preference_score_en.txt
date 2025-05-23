@@ -3,6 +3,6 @@
 Please evaluate the following output based on the criteria for Preferences Inference on a 100-point scale:
 - Accuracy of Preference Inference
 Have the preferences of the user been inferred appropriately based on their posts?(70 points)
-Is the inferred preference consistent with the user’s post content?(30 points)
+Is the inferred preference consistent with the post content of the user?(30 points)
 
 *** Output Result ***

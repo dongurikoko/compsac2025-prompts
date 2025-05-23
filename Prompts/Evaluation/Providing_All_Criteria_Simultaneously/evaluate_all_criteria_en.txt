@@ -1,11 +1,11 @@
-# Evaluation Prompt : Providing All Criteria at Once
+# Evaluation Prompt : Providing All Criteria Simultaneously
 
 *** Evaluation Criteria ***
 • Personality Trait Inference
 - Scoring Accuracy
-Are the scores for each item (e.g., S1–S9) appropriate?
+Are the scores for each item (e.g., S1––S9) appropriate?
 Are the calculated results for each personality trait (Agreeableness, Extraversion, Neuroticism, Conscientiousness, and Openness) valid?
-Is the reasoning behind the assigned scores clear and reasonable based on the user’s post content?
+Is the reasoning behind the assigned scores clear and reasonable based on the post content of the user?
 Has reverse scoring been correctly applied?
 
 - Accuracy of Score Calculation
@@ -15,7 +15,7 @@ Is the score calculation process explicitly documented, including mathematical e
 • Preferences Inference
 - Accuracy of Preference Inference
 Have the preferences of the user been inferred appropriately based on their posts?
-Is the inferred preference consistent with the user’s post content?
+Is the inferred preference consistent with the post content of the user?
 
 • Emotion Inference
 - Accuracy of Emotion Detection
@@ -49,6 +49,6 @@ Is it clearly explained why each event was selected?
 
 
 Please evaluate the following output based on the given evaluation criteria.
-Additionally, ensure that all calculations are re-performed using Python program, and compare the recalculated scores with the provided output to verify if they match.
+Additionally, ensure that all calculations are re-performed using Python program, and compare the recalculated scores with the provided output to verify whether they match.
 
 *** Output Result ***

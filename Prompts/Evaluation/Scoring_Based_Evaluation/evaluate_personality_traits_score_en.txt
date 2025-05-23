@@ -2,14 +2,14 @@
 
 Please evaluate the following output based on the criteria for Personality Traits Inference on a 100-point scale:
 - Scoring Accuracy
-• Are the scores for each item (e.g., S1–S9) appropriate?(25 points)
+• Are the scores for each item (e.g., S1–-S9) appropriate?(25 points)
 • Are the calculated results for each personality trait(Agreeableness, Extraversion, Neuroticism, Conscientiousness and Openness) valid?(25 points)
-• Is the reasoning behind the assigned scores clear and reasonable based on the user ’s post content?(20 points)
+• Is the reasoning behind the assigned scores clear and reasonable based on the post content of the user?(20 points)
 • Has reverse scoring been correctly applied?(10 points)
 
 - Accuracy of Score Calculation
 • Is the personality trait inference process accurate and compliant with the specified calculation formula?(10 points)
 • Is the score calculation process explicitly documented, including mathematical expressions and explanations of intermediate steps?(10 points)
 
-Additionally, ensure that all calculations are re-performed using Python program, and compare the recalculated scores with the provided output to verify if they match.
+Additionally, ensure that all calculations are re-performed using Python program, and compare the recalculated scores with the provided output to verify whether they match.
 *** Output Result ***
