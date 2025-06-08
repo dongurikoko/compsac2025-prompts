@@ -1,7 +1,7 @@
 # Prompt Dataset for COMPSAC 2025 Paper
 
 This is the prompt dataset proposed in our paper:  
-**"Optimization of Prompt Segmentation for Improving Event Recommendation Accuracy Using Generative Artificial Intelligence"**, accepted at **COMPSAC 2025**.
+**"Optimization of Prompt Segmentation for Improving Event Recommendation Accuracy Using Generative Artificial Intelligence"**, accepted at **COMPSAC 2025**, Symposium on Data Sciences, Analytics & Technologies (DSAT 2025). 
 (📄 The official paper link will be added here once available.)
 
 It includes the following types of prompts:
